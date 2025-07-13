@@ -1,0 +1,66 @@
+@import 'tailwindcss';
+
+
+@theme {
+  --color-main-color: #2a2a2e; 
+  --color-secondry-color: #DFAF35; 
+  --color-secondry-color-50: #fffefa; 
+ --color-secondry-color-500: #AA811B; 
+  --color-secondry-color-700: #997518; 
+    --color-secondry-color-200: #DDA823; 
+
+
+
+
+}
+.style-div{
+  justify-content: space-around;
+}
+.sty{
+  justify-content: space-between;
+  align-items: center;
+  
+}
+.style-btn{
+    justify-content:center
+
+
+}
+
+/* In your global CSS or a dedicated CSS module */
+.my-custom-swiper-slide {
+    width: calc((100% - (2 * 5px)) / 2) !important; /* For 2 slides, 5px space */
+}
+
+/* index.css */
+
+/* Change the color of the navigation arrows */
+.swiper-button-prev,
+.swiper-button-next {
+    color: #4F46E5; /* Example: Indigo color */
+}
+
+/* Change the size of the arrows */
+.swiper-button-prev::after,
+.swiper-button-next::after {
+    font-size: 24px !important; /* Use !important to override default styles if needed */
+    font-weight: 900; /* Make them bolder */
+}
+
+/* Style on hover */
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+    color: #3730A3; /* Darker indigo on hover */
+}
+
+/* Position arrows outside the container on larger screens */
+@media (min-width: 1024px) {
+    .swiper-button-prev {
+        left: -10px;
+    }
+    .swiper-button-next {
+        right: -10px;
+    }
+}
+
+
